@@ -1,1 +1,5 @@
 
+file '/myfile' do
+content 'This is just a simple recipe for creating a file in root directory'
+action :create
+end
