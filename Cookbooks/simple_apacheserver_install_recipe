@@ -1,1 +1,19 @@
 
+
+
+package "httpd" do
+action :install
+end
+
+
+file '/var/www/html/index.html' do
+content 'This is the default html page used by apache'
+action :create
+end
+
+
+service 'httpd' do
+action [:enable, :start]
+end
+
+
