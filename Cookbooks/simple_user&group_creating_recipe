@@ -1,0 +1,10 @@
+user "username" do
+action :create
+end
+
+
+group "group_name" do
+action :create
+members 'users_name'
+append true          // to add not replace
+end
